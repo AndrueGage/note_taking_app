@@ -1,8 +1,7 @@
 const express = require('express');
-const path = require('path');
 const app = express();
-const notesRoute = require('./routes/notes');
-const homeRoute = require('./routes/home')
+const notesRoute = require('./routes/notes.js');
+const homeRoute = require('./routes/home.js')
 const PORT = process.env.PORT || 3001;
 
 app.use(express.json());
